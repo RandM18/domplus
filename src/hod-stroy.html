@@ -1,0 +1,42 @@
+@@include('./tpl/head.html')
+@@include('./tpl/header.html')
+<main class="main">
+    <div class="single-head">
+        <div class="single-head__top">
+            <div class="container">
+                <div class="single-head__title">Ход строительства</div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="breadcrubms">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/">О проекте</a></li>
+                <li><span>Новости</span></li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="hod__grid">
+            <a href="#" class="hod__card">
+                <img src="assets/img/appartments/card.jpg" alt="poster" class="hod__card_poster">
+                <div class="hod__card_body">
+                    <div class="hod__card_date">05.10.2023</div>
+                    <div class="hod__card_span">6 фотографий</div>
+                </div>
+            </a>
+            @@for (var i=0;i<7; i++){
+                <a href="#" class="hod__card">
+                    <img src="assets/img/appartments/card.jpg" alt="poster" class="hod__card_poster">
+                    <div class="hod__card_body">
+                        <div class="hod__card_date">05.10.2023</div>
+                        <div class="hod__card_span">6 фотографий</div>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+</main>
+@@include('./tpl/footer.html')
+@@include('./tpl/foot.html')
