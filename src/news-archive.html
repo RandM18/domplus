@@ -1,7 +1,30 @@
 @@include('./tpl/head.html')
 @@include('./tpl/header.html')
 <main class="main">
-    @@include('./tpl/components/single-head.html')
+    <div class="single-head bg">
+        <div class="single-head__top">
+            <div class="container">
+                <div class="single-head__wrapper">
+                    <div class="single-head__title">Новости</div>
+                    <div class="single-head__links">
+                        <a href="#" class="active">Все</a>
+                        <a href="#">Новости</a>
+                        <a href="#">Акции</a>
+                    </div>
+                    <div class="single-head__years">
+                        <a href="#">2022</a>
+                        <a href="#" class="active">2023</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="breadcrubms">
+                <li><a href="/">Главная</a></li>
+                <li><span>Новости</span></li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <div class="news-archive__grid">
             <a href="#" class="news-archive__card">

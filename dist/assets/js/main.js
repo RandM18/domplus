@@ -72,5 +72,11 @@ jQuery(function ($) {
         $(this).addClass('active');
         // otdelkaSwiper.slideTo(0);
     });
+
+
+    $(".open-popup-link").magnificPopup({
+        type: "inline",
+        midClick: true, 
+    });
     
 });

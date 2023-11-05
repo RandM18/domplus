@@ -48,43 +48,42 @@
 <main class="main">
     <div class="contacts-head bg">
         <div class="container">
-            <div class="contacts-head__title">Документы</div>
+            <div class="contacts-head__title">ПОПАПЫ (страница макета)</div>
         </div>
     </div>
-    <div class="documents-body">
-        <div class="container">
-            <ul class="breadcrubms">
-                <li><a href="/">Главная</a></li>
-                <li><span>Документы</span></li>
-            </ul>
-            <div class="documents-grid">
-                <a href="#" class="documents-grid__card">
-                    Документ 1
-                </a>
-                <a href="#" class="documents-grid__card">
-                    Документ 1
-                </a>
-                <a href="#" class="documents-grid__card">
-                    Документ 1
-                </a>
-                <a href="#" class="documents-grid__card">
-                    Документ 1
-                </a>
-                <a href="#" class="documents-grid__card">
-                    Документ 1
-                </a>
-                <a href="#" class="documents-grid__card">
-                    Документ 1
-                </a>
-                <a href="#" class="documents-grid__card">
-                    Документ 1
-                </a>
-                <a href="#" class="documents-grid__card">
-                    Документ 1
-                </a>
-            </div>
+
+    <div class="container">
+        <a href="#application" class="open-popup-link">Оставить заявку</a>
+        <a href="#consultation" class="open-popup-link">Нужна консультация?</a>
+    </div>
+
+
+    <div id="application" class="white-popup mfp-hide">
+        <div class="popup__wrapper">
+            <div class="popup__title">Оставить заявку</div>
+            <div class="popup__text">Наш менеджер свяжется с Вами!</div>
+            <form action="#">
+                <input type="text" class="textbox" placeholder="Ваше имя" name="yourname">
+                <input type="tel" class="textbox" placeholder="Телефон" name="tel">
+                <input type="submit" value="Отправить" class="rvbtn">
+                <label class="agr"><input type="checkbox" name="agr"><span>Соглашение на обработку персональных данных</span></label>
+            </form>
         </div>
     </div>
+
+    <div id="consultation" class="white-popup mfp-hide">
+        <div class="popup__wrapper">
+            <div class="popup__title">Нужна консультация?</div>
+            <div class="popup__text">Наш менеджер свяжется с Вами!</div>
+            <form action="#">
+                <input type="text" class="textbox" placeholder="Ваше имя" name="yourname">
+                <input type="tel" class="textbox" placeholder="Телефон" name="tel">
+                <input type="submit" value="Отправить" class="rvbtn">
+                <label class="agr"><input type="checkbox" name="agr"><span>Соглашение на обработку персональных данных</span></label>
+            </form>
+        </div>
+    </div>
+
 </main>
 <footer class="footer" id="footer">
         <div class="footer__wrapper">
