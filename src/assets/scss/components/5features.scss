@@ -165,3 +165,12 @@
         }
     }
 }
+
+.features-small{
+    .features__title{
+        @include av('font-size', 28, 20);
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+}

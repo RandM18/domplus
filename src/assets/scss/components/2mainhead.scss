@@ -33,6 +33,8 @@
     // .mainhead__bottom
 
     &__bottom {
+        position: relative;
+        z-index: 11;
         display: flex;
         // gap: 20px;
         // .mainhead__bottom_left
@@ -138,11 +140,23 @@
     }
 }
 .mainhead {
-
+    position: relative;
     // .mainhead__slider
 
+    &__decor{
+        position: absolute;
+        left: -100px;
+        bottom: 40px;
+        z-index: 10;
+        pointer-events: none;
+        @media(max-width: 768px){
+            width: 200px;
+                left: -35px;
+                bottom: 200px;
+        }
+    }
     &__slider {
-
+        
         // .mainhead__slider_content
 
         &_content {

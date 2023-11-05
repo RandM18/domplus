@@ -26,6 +26,17 @@ jQuery(function ($) {
             prevEl: "#features-prev",
         },
     });
+    const otdelkaSwiper = new Swiper("#otdelka-slider", {
+        loop: true,
+        pagination: {
+            el: "#otdelka-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: "#otdelka-next",
+            prevEl: "#otdelka-prev",
+        },
+    });
     const newsSwiper = new Swiper("#news-slider", {
         // loop: true,
         slidesPerView: 1,
@@ -50,6 +61,16 @@ jQuery(function ($) {
     $(".faq__item_btn").on('click', function(e){
         e.preventDefault();
         let item = $(this).closest('.faq__item').toggleClass('active');
+    });
+
+    $(".company-tabs__tablinks .tablink").on('click', function(e){
+        e.preventDefault();
+        let t = $(this).attr('href');
+        $(".company-tabs_tab").hide();
+        $(t).show();
+        $(".company-tabs__tablinks .tablink").removeClass('active');
+        $(this).addClass('active');
+        // otdelkaSwiper.slideTo(0);
     });
     
 });

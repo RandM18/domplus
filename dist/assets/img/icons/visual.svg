@@ -1,17 +1,1 @@
-<svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#176; &#208;&#146;&#208;&#184;&#208;&#183;&#209;&#131;&#208;&#176;&#208;&#187;&#209;&#140;&#208;&#189;&#209;&#139;&#208;&#185; &#208;&#178;&#209;&#139;&#208;&#177;&#208;&#190;&#209;&#128;" clip-path="url(#clip0_2_14353)">
-<path id="Vector" d="M13 19.22H1V3.21997L13 1.21997V19.22Z" stroke="#848386" stroke-width="2" stroke-miterlimit="10"/>
-<path id="Vector_2" d="M23 19.22H13V1.21997L23 3.21997V19.22Z" stroke="#848386" stroke-width="2" stroke-miterlimit="10"/>
-<path id="Vector_3" d="M3.5 6.71997L10.5 5.71997" stroke="#848386" stroke-width="2" stroke-miterlimit="10"/>
-<path id="Vector_4" d="M20.5 6.71997L15.5 5.71997" stroke="#848386" stroke-width="2" stroke-miterlimit="10"/>
-<path id="Vector_5" d="M3.5 11.22H10.5" stroke="#848386" stroke-width="2" stroke-miterlimit="10"/>
-<path id="Vector_6" d="M3.5 15.22H10.5" stroke="#848386" stroke-width="2" stroke-miterlimit="10"/>
-<path id="Vector_7" d="M15.5 11.22H20.5" stroke="#848386" stroke-width="2" stroke-miterlimit="10"/>
-<path id="Vector_8" d="M15.5 15.22H20.5" stroke="#848386" stroke-width="2" stroke-miterlimit="10"/>
-</g>
-<defs>
-<clipPath id="clip0_2_14353">
-<rect width="24" height="20.22" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg width="24" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="ÐÐºÐ¾Ð½ÐºÐ° ÐÐ¸Ð·ÑÐ°Ð»ÑÐ½ÑÐ¹ Ð²ÑÐ±Ð¾Ñ" clip-path="url(#clip0_2_14353)" stroke="#848386" stroke-width="2" stroke-miterlimit="10"><path id="Vector" d="M13 19.22H1v-16l12-2v18z"/><path id="Vector_2" d="M23 19.22H13v-18l10 2v16z"/><path id="Vector_3" d="M3.5 6.72l7-1"/><path id="Vector_4" d="M20.5 6.72l-5-1"/><path id="Vector_5" d="M3.5 11.22h7"/><path id="Vector_6" d="M3.5 15.22h7"/><path id="Vector_7" d="M15.5 11.22h5"/><path id="Vector_8" d="M15.5 15.22h5"/></g><defs><clipPath id="clip0_2_14353"><path fill="#fff" d="M0 0h24v20.22H0z"/></clipPath></defs></svg>

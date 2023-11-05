@@ -1,0 +1,38 @@
+.selectbox {
+    margin: 52px 0px;
+    padding: 18px 25px;
+    border-radius: 10px;
+    border: 1px solid  #009EE3;
+    box-shadow: 0px 4px 10px 0px rgba(37, 83, 157, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // .selectbox__title
+
+    &__title {
+        color:  #25539D;
+        font-weight: 700;
+        @media(max-width: 768px){
+            display: none;
+        }
+    }
+        .appartments__actions{
+            @media(max-width: 768px){
+                display: none;
+            }
+        }
+
+    // .selectbox__btn
+
+    &__btn {
+        color: #25539D;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+        display: none;
+        text-decoration: none;
+        @media(max-width: 768px){
+            display: block;
+        }
+    }
+}

@@ -47,29 +47,46 @@
 </header>
 <main class="main">
     <div class="abouthead">
-    <div class="abouthead__top">
-        <div class="container">
-            <div class="abouthead__title">О комплексе</div>
-            <ul class="breadcrubms">
-                <li><a href="/">Главная</a></li>
-                <li><span>О комплексе</span></li>
-            </ul>
+        <div class="abouthead__top">
+            <div class="container">
+                <div class="abouthead__title">О комплексе</div>
+                <ul class="breadcrubms">
+                    <li><a href="/">Главная</a></li>
+                    <li><span>О комплексе</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="abouthead__poster">
+            <img src="assets/img/abouthead/bg.jpg" alt="bg">
+        </div>
+        <div class="abouthead__actions">
+            <a href="#" class="rvbtn"><img src="assets/img/icons/filter.svg" alt="icon">Выбрать квартиру</a>
+            <a href="#" class="rvbtn"><img src="assets/img/icons/location.svg" alt="icon">Расположение</a>
+            <a href="#" class="rvbtn"><img src="assets/img/icons/phone.svg" alt="icon">Заказать звонок</a>
         </div>
     </div>
-    <div class="abouthead__poster">
-        <img src="assets/img/abouthead/bg.jpg" alt="bg">
-    </div>
-    <div class="abouthead__actions">
-        <a href="#" class="rvbtn"><img src="assets/img/icons/filter.svg" alt="icon">Выбрать квартиру</a>
-        <a href="#" class="rvbtn"><img src="assets/img/icons/location.svg" alt="icon">Расположение</a>
-        <a href="#" class="rvbtn"><img src="assets/img/icons/phone.svg" alt="icon">Заказать звонок</a>
-    </div>
-</div>
     
     <div class="company-features">
         <div class="company-features__row">
             <div class="company-features__col content">
-                <div class="company-features__content">text</div>
+                <div class="company-features__content">
+                    <ul>
+                        <li>
+                            <div class="number">5</div>
+                            <div class="text"><strong>этажей</strong><br>первый этаж - жилой</div>
+                        </li>
+                        <li>
+                            <div class="number">100</div>
+                            <div class="text"><strong>квартир</strong><br>широкий выбор современных
+                            и практичных планировок</div>
+                        </li>
+                        <li>
+                            <div class="text">Все квартиры с отделкой под ключ,
+                            дополнительное утепление фасада,
+                            подъезды с дизайном</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="company-features__col">
                 <img src="assets/img/features/1.jpg" alt="poster">
@@ -80,15 +97,85 @@
                 <img src="assets/img/features/2.jpg" alt="poster">
             </div>
             <div class="company-features__col content right">
-                <div class="company-features__content">text</div>
+                <div class="company-features__content">
+                    <ul>
+                        <li><div class="text">Современное инженерное оборудование и полностью новые коммуникации, энергоэффективные стеклопакеты </div></li>
+                        <li><div class="text">Благоустроенная придомовая территория. Озеленение. Современный новый детский игровой городок. Своя парковка на
+                        территории</div></li>
+                        <li><div class="text">Тихий, зеленый, жилой спальный район. Отсутствие шумных трасс и вредных производств</div></li>
+                    </ul>
+                </div>
             </div>    
         </div>
         <div class="company-features__row">
             <div class="company-features__col content">
-                <div class="company-features__content">text</div>
+                <div class="company-features__content">
+                    <ul>
+                        <li>
+                            <div class="text">
+                                Высокоскоростной интернет, цифровое телевидение
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text">
+                                Развитая социальная инфраструктура (школы, детские сады, студии творчества, поликлинике, больницы, фитнес центры,
+                                торговые центры и пр.)
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="company-features__col">
                 <img src="assets/img/features/3.jpg" alt="poster">
+            </div>
+        </div>
+    </div>
+
+    <div class="company-tabs">
+        <div class="container">
+            <div class="company-tabs__header">
+                <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7_46582)">
+                        <path d="M16.3 0.349609L22.15 6.19961L16.3 12.0496" stroke="white" stroke-miterlimit="10" />
+                        <path d="M21.6 6.28027H0" stroke="white" stroke-miterlimit="10" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_7_46582">
+                            <rect width="22.86" height="12.41" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <div class="company-tabs__title">Отделка</div>
+                <div class="company-tabs__subtitle">Планировочные решения</div>
+                <div class="company-tabs__actions">
+                    <div class="swiper-pagination" id="otdelka-pagination"></div>
+                    <div class="swiper-button-prev" id="otdelka-prev"></div>
+                    <div class="swiper-button-next" id="otdelka-next"></div>
+                </div>
+            </div>
+            <div class="company-tabs__body">
+                <div class="company-tabs__tablinks">
+                    <a href="#t1" class="tablink active">Вид 1</a>
+                    <a href="#t2" class="tablink">Вид 2</a>
+                </div>
+                <div class="company-tabs_tab" id="t1">
+                    <div class="swiper company-tabs__slider" id="otdelka-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="assets/img/appartments/otdelka1.jpg" alt="img"></div>
+                            <div class="swiper-slide"><img src="assets/img/appartments/otdelka1.jpg" alt="img"></div>
+                            <div class="swiper-slide"><img src="assets/img/appartments/otdelka1.jpg" alt="img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-tabs_tab" id="t2" style="display:none;">
+                    <div class="swiper company-tabs__slider" id="otdelka-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="assets/img/appartments/card.jpg" alt="img"></div>
+                            <div class="swiper-slide"><img src="assets/img/appartments/card.jpg" alt="img"></div>
+                            <div class="swiper-slide"><img src="assets/img/appartments/card.jpg" alt="img"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -138,7 +225,7 @@
         </div>
     </div>
 </div>
-    <div class="features">
+    <div class="features features-small">
     <div class="container">
         <div class="features__wrapper">
             <div class="features__content">
@@ -176,8 +263,59 @@
         <div class="appartments__header">
             <div class="appartments__title">Выбрать квартиру</div>
             <div class="appartments__actions">
-                <a href="#" class="appartments__btn"><img src="assets/img/icons/visual.svg" alt="icon"><span>Визуальный выбор</span></a>
-                <a href="#" class="appartments__btn"><img src="assets/img/icons/filter.svg" alt="icon"><span>Выбор по параметрам</span></a>
+                <a href="#" class="appartments__btn">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_4_46154)">
+                            <path d="M13 19.2197H1V3.21973L13 1.21973V19.2197Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M23 19.2197H13V1.21973L23 3.21973V19.2197Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M3.5 6.71973L10.5 5.71973" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M20.5 6.71973L15.5 5.71973" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M3.5 11.2197H10.5" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M3.5 15.2197H10.5" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M15.5 11.2197H20.5" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                            <path d="M15.5 15.2197H20.5" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_4_46154">
+                                <rect width="24" height="20.22" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <span>Визуальный выбор</span></a>
+                <a href="#" class="appartments__btn active">
+                    <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_4_46165)">
+                            <path d="M23.75 2.37988H0V3.87988H23.75V2.37988Z" fill="currentColor" />
+                            <path d="M23.75 9.5H0V11H23.75V9.5Z" fill="currentColor" />
+                            <path d="M23.75 16.6201H0V18.1201H23.75V16.6201Z" fill="currentColor" />
+                            <path
+                                d="M6.52996 5.50023C7.8444 5.50023 8.90996 4.43467 8.90996 3.12023C8.90996 1.8058 7.8444 0.740234 6.52996 0.740234C5.21553 0.740234 4.14996 1.8058 4.14996 3.12023C4.14996 4.43467 5.21553 5.50023 6.52996 5.50023Z"
+                                fill="currentColor" />
+                            <path
+                                d="M6.52997 6.25C4.80997 6.25 3.40997 4.85 3.40997 3.13C3.40997 1.41 4.80997 0 6.52997 0C8.24997 0 9.64997 1.4 9.64997 3.12C9.64997 4.84 8.24997 6.24 6.52997 6.24V6.25ZM6.52997 1.5C5.62997 1.5 4.90997 2.23 4.90997 3.12C4.90997 4.01 5.63997 4.74 6.52997 4.74C7.41997 4.74 8.14997 4.01 8.14997 3.12C8.14997 2.23 7.41997 1.5 6.52997 1.5Z"
+                                fill="currentColor" />
+                            <path
+                                d="M16.03 12.6301C17.3444 12.6301 18.41 11.5646 18.41 10.2501C18.41 8.93568 17.3444 7.87012 16.03 7.87012C14.7155 7.87012 13.65 8.93568 13.65 10.2501C13.65 11.5646 14.7155 12.6301 16.03 12.6301Z"
+                                fill="currentColor" />
+                            <path
+                                d="M16.03 13.3796C14.31 13.3796 12.91 11.9796 12.91 10.2596C12.91 8.53965 14.31 7.13965 16.03 7.13965C17.75 7.13965 19.15 8.53965 19.15 10.2596C19.15 11.9796 17.75 13.3796 16.03 13.3796ZM16.03 8.62965C15.13 8.62965 14.41 9.35965 14.41 10.2496C14.41 11.1396 15.14 11.8696 16.03 11.8696C16.92 11.8696 17.65 11.1396 17.65 10.2496C17.65 9.35965 16.92 8.62965 16.03 8.62965Z"
+                                fill="currentColor" />
+                            <path
+                                d="M6.52996 19.76C7.8444 19.76 8.90996 18.6944 8.90996 17.38C8.90996 16.0656 7.8444 15 6.52996 15C5.21553 15 4.14996 16.0656 4.14996 17.38C4.14996 18.6944 5.21553 19.76 6.52996 19.76Z"
+                                fill="currentColor" />
+                            <path
+                                d="M6.52997 20.4998C4.80997 20.4998 3.40997 19.0998 3.40997 17.3798C3.40997 15.6598 4.80997 14.2598 6.52997 14.2598C8.24997 14.2598 9.64997 15.6598 9.64997 17.3798C9.64997 19.0998 8.24997 20.4998 6.52997 20.4998ZM6.52997 15.7498C5.62997 15.7498 4.90997 16.4798 4.90997 17.3698C4.90997 18.2598 5.63997 18.9898 6.52997 18.9898C7.41997 18.9898 8.14997 18.2598 8.14997 17.3698C8.14997 16.4798 7.41997 15.7498 6.52997 15.7498Z"
+                                fill="currentColor" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_4_46165">
+                                <rect width="23.75" height="20.5" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                    <span>Выбор по параметрам</span></a>
             </div>
         </div>
     </div>
@@ -217,7 +355,9 @@
                             <div class="appartments__filter_name">Комнат</div>
                         </div>
                         <div class="appartments__filter_range">
-                            <div style="width:150px; height:50px; background:gray;">C 1 2</div>
+                            <label class="room__btn"><input type="radio" checked name="room"><span>C</span></label>
+                            <label class="room__btn"><input type="radio" name="room"><span>1</span></label>
+                            <label class="room__btn"><input type="radio" name="room"><span>2</span></label>
                         </div>
                     </div>
                 </div>

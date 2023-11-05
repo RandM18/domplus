@@ -1,12 +1,47 @@
 @@include('./tpl/head.html')
 @@include('./tpl/header.html')
 <main class="main">
-    @@include('./tpl/components/abouthead.html')
+    <div class="abouthead">
+        <div class="abouthead__top">
+            <div class="container">
+                <div class="abouthead__title">О комплексе</div>
+                <ul class="breadcrubms">
+                    <li><a href="/">Главная</a></li>
+                    <li><span>О комплексе</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="abouthead__poster">
+            <img src="assets/img/abouthead/bg.jpg" alt="bg">
+        </div>
+        <div class="abouthead__actions">
+            <a href="#" class="rvbtn"><img src="assets/img/icons/filter.svg" alt="icon">Выбрать квартиру</a>
+            <a href="#" class="rvbtn"><img src="assets/img/icons/location.svg" alt="icon">Расположение</a>
+            <a href="#" class="rvbtn"><img src="assets/img/icons/phone.svg" alt="icon">Заказать звонок</a>
+        </div>
+    </div>
     
     <div class="company-features">
         <div class="company-features__row">
             <div class="company-features__col content">
-                <div class="company-features__content">text</div>
+                <div class="company-features__content">
+                    <ul>
+                        <li>
+                            <div class="number">5</div>
+                            <div class="text"><strong>этажей</strong><br>первый этаж - жилой</div>
+                        </li>
+                        <li>
+                            <div class="number">100</div>
+                            <div class="text"><strong>квартир</strong><br>широкий выбор современных
+                            и практичных планировок</div>
+                        </li>
+                        <li>
+                            <div class="text">Все квартиры с отделкой под ключ,
+                            дополнительное утепление фасада,
+                            подъезды с дизайном</div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="company-features__col">
                 <img src="assets/img/features/1.jpg" alt="poster">
@@ -17,15 +52,85 @@
                 <img src="assets/img/features/2.jpg" alt="poster">
             </div>
             <div class="company-features__col content right">
-                <div class="company-features__content">text</div>
+                <div class="company-features__content">
+                    <ul>
+                        <li><div class="text">Современное инженерное оборудование и полностью новые коммуникации, энергоэффективные стеклопакеты </div></li>
+                        <li><div class="text">Благоустроенная придомовая территория. Озеленение. Современный новый детский игровой городок. Своя парковка на
+                        территории</div></li>
+                        <li><div class="text">Тихий, зеленый, жилой спальный район. Отсутствие шумных трасс и вредных производств</div></li>
+                    </ul>
+                </div>
             </div>    
         </div>
         <div class="company-features__row">
             <div class="company-features__col content">
-                <div class="company-features__content">text</div>
+                <div class="company-features__content">
+                    <ul>
+                        <li>
+                            <div class="text">
+                                Высокоскоростной интернет, цифровое телевидение
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text">
+                                Развитая социальная инфраструктура (школы, детские сады, студии творчества, поликлинике, больницы, фитнес центры,
+                                торговые центры и пр.)
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="company-features__col">
                 <img src="assets/img/features/3.jpg" alt="poster">
+            </div>
+        </div>
+    </div>
+
+    <div class="company-tabs">
+        <div class="container">
+            <div class="company-tabs__header">
+                <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_7_46582)">
+                        <path d="M16.3 0.349609L22.15 6.19961L16.3 12.0496" stroke="white" stroke-miterlimit="10" />
+                        <path d="M21.6 6.28027H0" stroke="white" stroke-miterlimit="10" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_7_46582">
+                            <rect width="22.86" height="12.41" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <div class="company-tabs__title">Отделка</div>
+                <div class="company-tabs__subtitle">Планировочные решения</div>
+                <div class="company-tabs__actions">
+                    <div class="swiper-pagination" id="otdelka-pagination"></div>
+                    <div class="swiper-button-prev" id="otdelka-prev"></div>
+                    <div class="swiper-button-next" id="otdelka-next"></div>
+                </div>
+            </div>
+            <div class="company-tabs__body">
+                <div class="company-tabs__tablinks">
+                    <a href="#t1" class="tablink active">Вид 1</a>
+                    <a href="#t2" class="tablink">Вид 2</a>
+                </div>
+                <div class="company-tabs_tab" id="t1">
+                    <div class="swiper company-tabs__slider" id="otdelka-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="assets/img/appartments/otdelka1.jpg" alt="img"></div>
+                            <div class="swiper-slide"><img src="assets/img/appartments/otdelka1.jpg" alt="img"></div>
+                            <div class="swiper-slide"><img src="assets/img/appartments/otdelka1.jpg" alt="img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="company-tabs_tab" id="t2" style="display:none;">
+                    <div class="swiper company-tabs__slider" id="otdelka-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="assets/img/appartments/card.jpg" alt="img"></div>
+                            <div class="swiper-slide"><img src="assets/img/appartments/card.jpg" alt="img"></div>
+                            <div class="swiper-slide"><img src="assets/img/appartments/card.jpg" alt="img"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

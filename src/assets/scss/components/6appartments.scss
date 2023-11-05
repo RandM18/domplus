@@ -49,13 +49,17 @@
         &:last-child:before{
             display: none;
         }
+
+        &.active{
+            color:#25539D;
+        }
     }
 
     // .appartments__body
 
     &__body {
         border-radius: 50px 50px 0px 0px;
-        background: rgba(#009EE3, 0.1);
+        background: rgba(#009EE3, 0.1) url('../img/appartments/bg.png') no-repeat 200% -200%;
         
     }
 
@@ -252,6 +256,61 @@
 
 }
 
-.container {}
+.room__btn{
+    position: relative;
+   
+    span{
+        width: 36px;
+        height: 36px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 17px;
+        color: #5C5B5E; 
+    }
+    input{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1px;
+        height: 1px;
+        appearance: none;
+        overflow: hidden;
+        opacity: 0;
+        clip: rect(1,1,1,1);
+        &:checked ~ span{
+            color:#fff;
+            background-color: #009EE3;
+        }
+    }
+}
 
-.active {}
+.appartments__table{
+    width: 100%;
+    color:#5C5B5E;
+    @media(max-width: 768px){
+        display: none;
+    }
+
+    th{
+        font-weight: 400;
+        padding: 13px 6px;
+    }
+    img{
+        width: 68px;
+    }
+    td{
+        text-align: center;
+        vertical-align: middle;
+        font-size: 18px;
+        padding: 32px 6px;
+    }
+
+    .appartments__grid{
+        display: none;
+        @media(max-width: 768px){
+            display: grid;
+        }
+    }
+}
