@@ -3451,6 +3451,12 @@ img.mfp-img {
     background: #fff url("../img/header/popup.png") no-repeat 10% 90%;
 }
 
+@media (max-width: 580px) {
+    .white-popup {
+        background-position: 60% 75%;
+    }
+}
+
 .popup__wrapper {
     max-width: 640px;
     width: 100%;
@@ -3488,6 +3494,11 @@ img.mfp-img {
 
 .popup__wrapper form .agr {
     grid-column: span 2;
+    font-size: 12px;
+    color: #3E3D40;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @media (max-width: 768px) {

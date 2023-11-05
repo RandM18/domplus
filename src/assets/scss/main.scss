@@ -1098,6 +1098,9 @@ body {
     justify-content: center;
     align-items: center;
     background: #fff url('../img/header/popup.png') no-repeat 10% 90%;
+    @media(max-width: 580px){
+        background-position: 60% 75%;
+    }
 }
 
 .popup {    
@@ -1139,6 +1142,12 @@ body {
                 @media(max-width: 768px){
                     grid-column: 1;
                 }
+                
+                font-size: 12px;
+                color:#3E3D40;
+                display: flex;
+                align-items: center;
+                gap:10px;
             }
         }
     }
